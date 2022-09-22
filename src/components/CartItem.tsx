@@ -19,7 +19,7 @@ const CartItem = ({ id, quantity }: CartItemProps) => {
 			<img
 				src={item.imgUrl}
 				alt={item.name}
-				style={{ width: "125px", height: "75px", objectFit: "fill" }}
+				style={{ minWidth: "125px", height: "75px" }}
 			/>
 			<div className="me-auto">
 				<div>
@@ -30,11 +30,13 @@ const CartItem = ({ id, quantity }: CartItemProps) => {
 						</span>
 					)}
 				</div>
-				<div className="text-muted" style={{ fontSize: ".75rem" }}>
+				<div className="text-muted" style={{ fontSize: ".6125rem" }}>
 					{formatCurrency(item.price)}
 				</div>
 			</div>
-			<div>{formatCurrency(item.price * quantity)}</div>
+			<div style={{ fontSize: ".825rem" }}>
+				{formatCurrency(item.price * quantity)}
+			</div>
 			<Button
 				variant="danger"
 				size="sm"
