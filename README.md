@@ -32,6 +32,6 @@ $PROJECT_ROOT
 
 ## How to run Project
 1. Install dependencies
-`**yarn** or **npm i**`
+`npm i`
 2. Run Phonebook
-`**yarn start** or **npm run dev**`
+`npm run dev`
