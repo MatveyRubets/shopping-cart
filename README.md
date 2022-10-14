@@ -33,5 +33,5 @@ $PROJECT_ROOT
 ## How to run Project
 1. Install dependencies
 `npm i`
-2. Run Phonebook
+2. Run Shopping Cart
 `npm run dev`
